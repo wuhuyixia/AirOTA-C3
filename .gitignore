@@ -1,0 +1,32 @@
+# ESP-IDF build output
+/build/
+/sdkconfig
+/sdkconfig.old
+
+# Compiled firmware and map files
+*.bin
+*.elf
+*.map
+
+# IDE and generated index files
+/.vscode/
+/.idea/
+/.clangd
+compile_commands.json
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Logs, dumps, and operating-system files
+*.log
+*.dmp
+.DS_Store
+Thumbs.db
+
+# Local environment and credential material
+.env
+.env.*
+*.pem
+*.key
+*.p12
