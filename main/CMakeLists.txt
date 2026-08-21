@@ -1,0 +1,24 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "config_store.c"
+        "led_app.c"
+        "wifi_app.c"
+        "mqtt_app.c"
+        "ota_app.c"
+        "web_app.c"
+    INCLUDE_DIRS "."
+    PRIV_REQUIRES
+        nvs_flash
+        spi_flash
+        esp_wifi
+        esp_event
+        esp_netif
+        esp_driver_gpio
+        esp_http_server
+        esp_http_client
+        app_update
+        mqtt
+        json
+        mbedtls
+)
